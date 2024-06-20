@@ -9,7 +9,7 @@ class Pantalla1 extends StatelessWidget {
       appBar: AppBar(
 
       title: const Text("Pantalla1"),
-        backgroundColor: Color.fromARGB(255, 20, 223, 23),
+      backgroundColor: const Color.fromARGB(255, 20, 223, 23),
       ),
       body: Center(
       child:

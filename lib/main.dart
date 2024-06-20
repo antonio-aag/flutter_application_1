@@ -5,11 +5,13 @@ import 'package:flutter_application_1/screens/pantalla3.dart';
 
 
 void main() {
-runApp(MyApp());
+runApp(const MyApp());
 
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
     title: 'Aplicación navigator',
     initialRoute: "/",
       routes: {
-        "/": (contexts) =>  Pantalla1(),
+        "/": (contexts) =>  const Pantalla1(),
         "/pantalla2": (context) => const Pantalla2(),
         "/pantalla3": (contextt) => const Pantalla3(),
 

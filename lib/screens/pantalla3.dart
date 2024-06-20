@@ -8,16 +8,16 @@ const Pantalla3 ({super.key});
     return Scaffold(
       appBar: AppBar(
       title: const Text("Pantalla3"),
-      backgroundColor: Color.fromARGB(255, 20, 223, 23),
+      backgroundColor: const Color.fromARGB(255, 20, 223, 23),
 
       ),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Container(
-          color: Color.fromRGBO(0, 0, 0, 1),
+          color: const Color.fromRGBO(0, 0, 0, 1),
           width: 150,
           height: 150,
-          margin: EdgeInsets.all(8.0),
+          margin: const EdgeInsets.all(8.0),
           child: Image.asset('/imagen.jpg'),
           ),
        

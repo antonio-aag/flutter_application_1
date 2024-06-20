@@ -9,7 +9,7 @@ const Pantalla2({super.key});
     return Scaffold(
       appBar: AppBar(
       title: const Text("Pantalla2"),
-      backgroundColor: Color.fromARGB(255, 20, 223, 23),
+      backgroundColor: const Color.fromARGB(255, 20, 223, 23),
 
       ),
       body: Center(
