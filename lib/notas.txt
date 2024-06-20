@@ -1,0 +1,190 @@
+/*
+  Widget build(BuildContext context) {
+      return MaterialApp(
+          title: 'ListView en Flutter',
+          home: Scaffold(
+            appBar: AppBar(
+              title: Text('Meses del año'),
+              backgroundColor: Color.fromARGB(255, 248, 0, 0),
+            ),
+            body: ListView.builder(
+                itemCount: 12,
+                  itemBuilder: (context, posicion) {
+                    return elementoDeLaLista(posicion);
+                  },
+            ),
+          ),
+      );
+    }
+    Widget elementoDeLaLista(int posicion) {
+    List<String> opciones = ['Enero', 'Febrero', 'Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Ocubre','Noviembre','Diciembre']; // Agrega las opciones que desees
+
+    return Card(
+      margin: EdgeInsets.all(10.0),
+      child: ListTile(
+      leading: Icon(Icons.calendar_month, color: Colors.blue),
+      title: Text('${opciones[posicion]}'),
+      subtitle: Text('Mes #${posicion + 1}'),
+      trailing: Icon(Icons.arrow_forward),
+      ),
+    );
+  }
+}
+/*
+
+Widget build(BuildContext context) {
+return MaterialApp(
+  title: 'Ejemplo de Row',
+  home: Scaffold(
+    appBar: AppBar(
+    title: Text('Mejores lugares del mundo'),
+    backgroundColor: Color.fromRGBO(252, 172, 0, 1),
+    ),
+    body: Center(
+      
+      child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      
+      children: <Widget>[
+      Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+        Container(
+          color: Colors.purple,
+          width: 50,
+          height: 50,
+          margin: EdgeInsets.all(8.0),
+        ),
+        Container(
+          color: Colors.orange,
+          width: 50,
+          height: 50,
+          margin: EdgeInsets.all(8.0),
+        ),
+      
+      ],
+        ),
+         Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+        Container(
+          color: Colors.purple,
+          width: 50,
+          height: 50,
+          margin: EdgeInsets.all(8.0),
+        ),
+        Container(
+          color: Colors.orange,
+          width: 50,
+          height: 50,
+          margin: EdgeInsets.all(8.0),
+        ),
+      
+      ],
+        ),
+   
+        
+    Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Container(
+          color: Color.fromRGBO(252, 172, 0, 1),
+          width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/01_khafre_north.jpg/640px-01_khafre_north.jpg'
+          ),
+        ),
+        Container(
+          color: Color.fromRGBO(252, 172, 0, 1),
+          width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmVF8nK46JttnJJAZnbfKfeRpweWHCBoRn6Q&s'
+          ),
+        ),
+        Container(
+          color: Color.fromRGBO(252, 172, 0, 1),              
+          width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://t2.uc.ltmcdn.com/es/posts/1/2/6/como_se_llaman_las_piramides_de_egipto_45621_600_square.jpg'
+          ),
+        ),
+        ],
+        ),     
+      Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Container(
+          color: Color.fromRGBO(252, 172, 0, 1),               
+          width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/stk3lqp0zqgbdlv1di6k'
+          ),
+        ),
+        Container(
+          color: Color.fromRGBO(252, 172, 0, 1),               
+          width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/qazoph2ndvuopvajoyye'
+          ),
+        ),
+        Container(
+          color: Color.fromRGBO(252, 172, 0, 1),
+               width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/r7hi7qicqhtqyzmrqmne'
+          ),
+        ),
+        ],
+        ),
+        Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Container(
+         color: Color.fromRGBO(252, 172, 0, 1),
+               width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/ofrlywwruye2ypbwv8k8'
+          ),
+        ),
+        Container(
+         color: Color.fromRGBO(252, 172, 0, 1),
+               width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/jzedoxc8irlkqk6cy4fz'
+          ),
+        ),
+        Container(
+         color: Color.fromRGBO(252, 172, 0, 1),
+               width: 150,
+          height: 150,
+          margin: EdgeInsets.all(8.0),
+          child: Image.network(
+            'https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/sh1labay19cuhzsuthvg'
+          ),
+        ),
+        ],
+        ),
+        
+        ],
+        ),
+      ),
+    ),
+  );*/
+
+
